@@ -123,6 +123,14 @@ public:
         n.getParam("nav_mux_idx", nav_mux_idx);
         add_channel(nav_drive_topic, drive_topic, nav_mux_idx);
 
+        // autokart channel
+        int autokart_mux_idx;
+        std::string autokart_drive_topic;
+        n.getParam("autokart_drive_topic", autokart_drive_topic);
+        ROS_INFO_STREAM("autokart_drive_topic" << autokart_drive_topic);
+        n.getParam("new_mux_idx", autokart_mux_idx);
+        add_channel(autokart_drive_topic, autokart_drive_topic, autokart_mux_idx);
+
         // ***Add a channel for a new planner here**
         // int new_mux_idx;
         // std::string new_drive_topic;
