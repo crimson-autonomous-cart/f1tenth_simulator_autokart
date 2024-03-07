@@ -111,6 +111,7 @@ rand_drive_topic: "/rand_drive"
 brake_drive_topic: "/brake"
 nav_drive_topic: "/nav"
 autokart_drive_topic: "/autokart_drive"
+keep_left_drive_topic: "/autokart_drive"
 # **Add name for new planning method here**
 new_drive_topic: "/new_drive"
 
